@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/detail_album_title_layout_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:orientation="horizontal">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/detail_album_title1_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="앨범명"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/detail_album_title2_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IU 5th Album 'Lilac'"
+                        android:textColor="@color/gray_color"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@id/detail_album_title1_tv"
+                        app:layout_constraintTop_toTopOf="@id/detail_album_title1_tv"
+                        app:layout_constraintStart_toEndOf="@id/detail_album_title1_tv"
+                        android:layout_marginStart="30dp"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@id/detail_album_title_layout_ll"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:id="@+id/detail_album_artist_layout_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/detail_album_artist1_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="아티스트"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/detail_album_artist2_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아이유 (IU)"
+                        android:textColor="@color/gray_color"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/detail_album_artist1_tv"
+                        app:layout_constraintTop_toTopOf="@+id/detail_album_artist1_tv"
+                        app:layout_constraintStart_toEndOf="@+id/detail_album_artist1_tv"
+                        android:layout_marginStart="30dp"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@+id/detail_album_artist_layout_ll"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:id="@+id/detail_album_publishing_layout_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/detail_album_publishing1_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="발매사"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/detail_album_publishing2_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="카카오엔터테인먼트"
+                        android:textColor="@color/gray_color"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/detail_album_publishing1_tv"
+                        app:layout_constraintTop_toTopOf="@+id/detail_album_publishing1_tv"
+                        app:layout_constraintStart_toEndOf="@+id/detail_album_publishing1_tv"
+                        android:layout_marginStart="30dp"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@+id/detail_album_publishing_layout_ll"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:id="@+id/detail_album_agent_layout_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/detail_album_agent1_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="기획사"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/detail_album_agent2_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EDMA엔터테인먼트"
+                        android:textColor="@color/gray_color"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/detail_album_agent1_tv"
+                        app:layout_constraintTop_toTopOf="@+id/detail_album_agent1_tv"
+                        app:layout_constraintStart_toEndOf="@+id/detail_album_agent1_tv"
+                        android:layout_marginStart="30dp"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@+id/detail_album_agent_layout_ll"
+                android:layout_marginStart="30dp"
+                android:id="@+id/detail_album_info_layout_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/detail_album_info1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="앨범소개"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/detail_album_info2_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/detail_album_info"
+                android:textColor="@color/gray_color"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@id/detail_album_info1_tv"
+                />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
